@@ -12,12 +12,12 @@
         <script src="bower_components/jquery/jquery.js"></script>
         <script type="text/javascript" src="//use.typekit.net/nrt6lvs.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        
         <script src="bower_components/superscrollorama/js/greensock/TweenMax.min.js"></script>
         <script src="bower_components/superscrollorama/js/jquery.superscrollorama.js"></script>
 
-        <script src="bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>
-        <link rel="stylesheet" href="bower_components/onepage-scroll/onepage-scroll.css">
+        <!-- 
+        <script src="bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>-->
+        <!-- <link rel="stylesheet" href="bower_components/onepage-scroll/onepage-scroll.css">  -->
         
         <script type="text/javascript" src="bower_components/jquery-powertip/src/core.js"></script>
         <script type="text/javascript" src="bower_components/jquery-powertip/src/csscoordinates.js"></script>
@@ -50,17 +50,42 @@
         <![endif]-->
 
 <!-- Start onepage -->
+<style>
+    h3 {
+        font-size: 150px;
+        position: relative;
+        padding: 160px 0;
+        
+    }
+    body {
+    /*background: #222438;*/
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
+}
+
+body {
+    visibility: visible;
+}
+
+div.wrapper {
+    height: 2600px;
+    padding-top: 400px;
+}
+</style>
     <div class="wrapper">
         <div class="main">
-
-        <!-- ##############  INTRO  ############## 
-        <section class="page1">
+        
+        <!-- ##############  INTRO  ############## -->
+        <section class="page-landing">
             <div id="logo">
                 <a href="/">
                     <img src="images/logo.svg" alt="Logo">
                 </a>
             </div>
-        </section>-->
+        </section>
 
         <!-- ##############  GRAPHICS  ############## -->
         <section class="page-graphics">
@@ -97,6 +122,7 @@
                     &lt;/div&gt;
                 </code>
                 <code class="js">
+                // Let's make Wife happy
                 $(".dinner-date").sushi();
                 </code>
             </div>
@@ -107,11 +133,8 @@
             <div class="page_container">
             <h1>I can build things in 3D.</h1>
             <h2>Is it fake or is it real, see is believing!</h2>
-            <div class="btns">
-                <a class="reload btn" href="#">See Examples</a>
             </div>
-            </div>
-        <img src="images/chesswire.png" alt="phones">
+        <img src="images/chesswire.png">
         </section>
         
         <!-- ##############  MOTION  ############## -->
@@ -119,14 +142,11 @@
           <div class="page_container">
           <h1>I can also make things move.</h1>
           <h2>They can dance, explode, or melt. Imagination is the limit!</h2>
-          <div class="btns">
-            <a class="reload btn" href="#">See Examples</a>
-          </div>
         </div>
       </section>
 
-    </div> <!-- end .main -->
-  </div> <!-- end .wrapper -->
+        </div> <!-- end .main -->
+    </div> <!-- end .wrapper -->
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
