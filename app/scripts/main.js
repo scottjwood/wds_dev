@@ -1,1 +1,1 @@
-// console.log('\'Running \'Allo!');
+console.log('Running!');
