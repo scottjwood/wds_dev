@@ -13,6 +13,9 @@
         <script type="text/javascript" src="//use.typekit.net/nrt6lvs.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         
+        <script src="bower_components/superscrollorama/js/greensock/TweenMax.min.js"></script>
+        <script src="bower_components/superscrollorama/js/jquery.superscrollorama.js"></script>
+
         <script src="bower_components/onepage-scroll/jquery.onepage-scroll.js"></script>
         <link rel="stylesheet" href="bower_components/onepage-scroll/onepage-scroll.css">
         
@@ -35,51 +38,7 @@
 
         <!-- Custom scripts -->
         <script type="text/javascript">
-        // add images
-        // var images = ['0133', '0193', '0403', '0455'];
-        // var cList = $('ul.the-thumbs')
-        // $.each(images, function(i)
-        // {
-        //     var li = $('<li/>')
-        //         .addClass('ui-menu-item')
-        //         .attr('role', 'menuitem')
-        //         .appendTo(cList);
-        //     var aaa = $('<a/>')
-        //         .addClass('ui-all')
-        //         .text(images[i])
-        //         .appendTo(li);
-        // });
-    // one page scroll
-        $(document).ready(function(){
-            $(".main").onepage_scroll({
-                sectionContainer: "section"
-            });
-        });
-    // Tooltips
-        $(function() {
-            // mouse-on logo
-            var mouseOnDiv = $('#logo');
-            var tipContent = $(
-                '<p>Scroll Down!</p>'
-            );
-            mouseOnDiv.data('powertipjq', tipContent);
-            mouseOnDiv.powerTip({
-                placement: 's',
-                mouseOnToPopup: true
-            });
 
-            // mouse-on who i've worked with
-            var mouseOnDiv = $('#workedwith');
-            var tipContent = $(
-                '<p>I have had the chance to work with a lot of different people</p>' +
-                '<p></p>'
-            );
-            mouseOnDiv.data('powertipjq', tipContent);
-            mouseOnDiv.powerTip({
-                placement: 'e',
-                mouseOnToPopup: true
-            });
-        });
 
         
     </script>
@@ -106,69 +65,10 @@
         <!-- ##############  GRAPHICS  ############## -->
         <section class="page-graphics">
             <div id="portfolio">
-                <a href="images/portfolio/0133_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/0133_s.jpg" />
-                </a>
-                <a href="images/portfolio/1754_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/1754_s.jpg" />
-                </a>
-                <a href="images/portfolio/0456_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/0456_s.jpg" />
-                </a>
-                <a href="images/portfolio/0455_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/0455_s.jpg" />
-                </a>
-                <a href="images/portfolio/0403_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/0403_s.jpg" />
-                </a>
-                <a href="images/portfolio/0193_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/0193_s.jpg" />
-                </a>
 
-                <a href="images/portfolio/1794_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/1794_s.jpg" />
-                </a>
-                <a href="images/portfolio/2083_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/2083_s.jpg" />
-                </a>
-                <a href="images/portfolio/2174_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/2174_s.jpg" />
-                </a>
-                <a href="images/portfolio/3254_l.jpg" title="Graphic Design">
-                    <img alt="Graphic Design" src="images/portfolio/3254_s.jpg" />
-                </a>
-                
             </div>
         </section>
-<script>
-    // portfolio gallery 
-        // $( window ).resize(function() {
-        $("#portfolio").justifiedGallery({ 
-            // 'justifyLastRow':false, 
-            // 'rowHeight':70, 
-            // 'rel':'gallery2', //replace the rel of all the links with the value 'gallery2'
-            'margins':1,
-            'sizeRangeSuffixes' : {
-                'lt100':'_s', 
-                'lt240':'_s', 
-                'lt320':'_m', 
-                'lt500':'_m', 
-                'lt640':'_l', 
-                'lt1024':'_l'
-            },
-            'onComplete': function() { //callback function
-                $('#portfolio .portfolio-item a').each( function() { $(this).hoverdir(); } );     
-            }
-        });
-            // console.log('Resized!');
-            // $('#portfolio .portfolio-item a').each( function() { $(this).hoverdir(); } ); 
-        // });
-</script>
-<script>
-$(function() {
-    
-});
-</script>
+
         <!-- ##############  INTRO  ############## -->
         <section class="page-intro">
             <div class="page_container">
@@ -189,6 +89,7 @@ $(function() {
                 <h1>I can write code to solve problems.</h1>
                 <h2>Code is hip, you can use it to make amazing things and solve complex problems quickly.</h2>
                 <code class="html">
+                    Classic HTML
                     &lt;div class="grocery_bag"&gt;<br>
                     &lt;section&gt;...&lt;/section&gt;<br>
                     &lt;section&gt;...&lt;/section&gt;<br>
@@ -226,5 +127,6 @@ $(function() {
 
     </div> <!-- end .main -->
   </div> <!-- end .wrapper -->
+<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
